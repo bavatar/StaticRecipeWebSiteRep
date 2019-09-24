@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>List of Recipes</title>
@@ -14,22 +14,29 @@
         font-family: "Source Code Pro";
         font-size: large;
     }
+
+    @import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
 </style>
+    <link rel="stylesheet" type="text/css" href="css/myStyle.css">
 </head>
+<!--lightsteelblue-->
 <body style="background-color: lightyellow">
 <!--body {-->
 <!--    background #ffffff url('https://res.cloudinary.com/ascension-enterprises/image/upload/v1569271806/samples/Java%20Boot%20Camp/jz2xwp3h_xle2ae.bmp') no-repeat top right;-->
 <!--}-->
+<div id="d1">
 <nav class="nav">
     <a class="nav-link active" href="#"><strong>Nav Bar</strong></a>
     <a class="nav-link" href="/list">Home</a>
     <a class="nav-link" href="/fruity-delicious">Fruity Delicious</a>
     <a class="nav-link" href="/fruity-delicious">Berry Apertif</a>
 </nav>
+</div>
 <br>
-<div class="container">
+
+<div class="container" >
     <div class="jumbotron" style="background-color: lightcyan">
-<center><h1>List of John's Smoothies</h1></center>
+        <h1>List of John's Smoothies</h1>
     </div>
 <center>
 <table>
